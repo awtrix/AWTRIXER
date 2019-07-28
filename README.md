@@ -1,4 +1,15 @@
-Piskel
+AWTRIXER (based on Piskel)
+======
+
+The original Repo Piskel was modified to work with AWTRIX 2.0
+- limit sprite size
+- remove some unnecessary functions
+- add function to convert the sprite to AWTRIX capable Pixels
+- remove Piskel online functions
+- add custom Upload function
+
+
+ORIGINAL PISKEL README
 ======
 
 [![Travis Status](https://api.travis-ci.org/piskelapp/piskel.png?branch=master)](https://travis-ci.org/piskelapp/piskel) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](https://gruntjs.com/)
