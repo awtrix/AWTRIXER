@@ -3,7 +3,7 @@ AWTRIXER (based on Piskel)
 
 The original Repo Piskel was modified to work with AWTRIX 2.0
 - limit sprite size
-- remove some unnecessary functions
+- remove some unnecessary functions like special export options
 - add function to convert the sprite to AWTRIX capable Pixels
 - remove Piskel online functions
 - add custom Upload function
