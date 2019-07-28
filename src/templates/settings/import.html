@@ -1,0 +1,48 @@
+<script type="text/template" id="templates/settings/import.html">
+  <div class="settings-section settings-section-import">
+    <div class="settings-title">
+      Load from Browser
+    </div>
+    <div class="settings-item">
+      <span>Load a <span class="import-highlight">local awtrixer</span> saved in this Browser</span>
+      <div class="import-section">
+        <button type="button" class="button  button-primary browse-local-button">Browse local saves</button>
+      </div>
+    </div>
+    <div class="settings-title">
+      Load .awtrixer file
+    </div>
+    <div class="settings-item">
+      <span>Load a <span class="import-highlight">.awtrixer</span> file from your computer</span>
+
+      <div class="import-section">
+        <button type="button" class="button  button-primary open-piskel-button">Browse .awtrixer files</button>
+        <span class="file-input-open-piskel-status"></span>
+        <input style="display:none"
+          type="file" name="open-piskel-input"
+          value="file" accept=".awtrixer"/>
+      </div>
+    </div>
+    <div class="settings-title">
+      Import From Picture
+    </div>
+    <div class="settings-item">
+      <div style="margin-top:5px;margin-bottom:5px;">Supports <span class="import-highlight">PNG, JPG, BMP, Animated GIF</span></div>
+      <div class="import-section">
+        <button type="button" class="button  button-primary file-input-button">Browse images</button>
+        <input style="display:none"
+          type="file" name="file-upload-input"
+          value="file" accept="image/*"/>
+      </div>
+    </div>
+    <div class="settings-title">
+      Recover recent sessions
+    </div>
+    <div class="settings-item">
+      Browse backups of previous sessions.
+      <div style="margin-top:10px;">
+        <button type="button" class="button button-primary browse-backups-button">Browse backups</button>
+      </div>
+    </div>
+  </div>
+</script>

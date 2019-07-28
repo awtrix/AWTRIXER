@@ -1,0 +1,83 @@
+<script type="text/template" id="templates/dialogs/browse-backups.html">
+  <div class="dialog-wrapper">
+    <h3 class="dialog-head">
+      Browse backups
+      <span class="dialog-close">X</span>
+    </h3>
+    <div class="dialog-content backups-wizard-container"></div>
+  </div>
+</script>
+
+<script type="text/template" id="backups-select-session">
+<div class="backups-step-container">
+  <div class="backups-step-content">
+    <div class="browse-backups-disclaimer">
+      <div class="backups-icon icon-common-backup-white">&nbsp;</div>
+      <div class="browse-backups-disclaimer-content">
+        <!-- Keep in sync with MAX_SESSIONS in BackupService.js -->
+        If you forgot to save your work or if AWTRIXER crashed, try to restore one of the automatically backed up sessions below (up to 10 sessions).
+        <br/>
+        <br/>
+        Backups may be erased without notice, so try to save your work to a file or to your gallery as soon as you can. 
+      </div>
+    </div>
+    <div class="session-list">
+    </div>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="session-list-empty">
+<div class="centered-message session-list-empty">No session found ...</div>
+</script>
+
+<script type="text/template" id="session-list-error">
+<div class="centered-message session-list-error">Could not load backup sessions, something went wrong.</div>
+</script>
+
+<script type="text/template" id="session-list-item">
+<div class="session-item">
+  <div class="session-details">
+    <span class="session-details-title">{{name}} {{description}}</span>
+    <span class="session-details-info">Session recorded {{date}}</span>
+    <span class="session-details-info">{{count}} saved</span>
+  </div>
+  <div class="session-actions">
+    <button class="button" data-session-id="{{id}}" data-action="delete">Delete</button>
+    <button class="button button-primary" data-session-id="{{id}}" data-action="view">View</button>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="backups-session-details">
+<div class="backups-step-container">
+  <div class="backups-step-content">
+    <div class="snapshot-list"></div>
+  </div>
+  <div class="backups-step-actions">
+    <button class="button back-button">back</button>
+  </div>
+</div>
+</script>
+
+<script type="text/template" id="snapshot-list-empty">
+<div class="centered-message snapshot-list-empty">No snapshot found ...</div>
+</script>
+
+<script type="text/template" id="snapshot-list-error">
+<div class="centered-message snapshot-list-error">Could not load snapshots, something went wrong.</div>
+</script>
+
+<script type="text/template" id="snapshot-list-item">
+<div class="snapshot-item" data-snapshot-id={{id}}>
+  <div class="snapshot-preview lowcont-dark-picker-background"></div>
+  <div class="snapshot-details">
+    <span class="snapshot-details-title">{{name}} {{description}}</span>
+    <span class="snapshot-details-info">Snapshot recorded {{date}}</span>
+    <span class="snapshot-details-info">{{frames}}, size {{resolution}}, {{fps}}fps</span>
+  </div>
+  <div class="snapshot-actions">
+    <button class="button button-primary" data-action="load" data-snapshot-id="{{id}}">Load</button>
+  </div>
+</div>
+</script>

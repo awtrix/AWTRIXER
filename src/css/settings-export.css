@@ -1,0 +1,163 @@
+/*******************************/
+/* Gif/Png Export Setting panel*/
+/*******************************/
+.gif-download-button,
+.gif-render-button {
+  margin-top : 10px;
+  margin-right : 10px;
+}
+
+.gif-export-preview,
+.png-export-preview {
+  position:relative;
+  margin-top:10px;
+  max-height:32px;
+}
+
+.gif-export-preview {
+  max-width:32px;
+}
+
+.png-export-preview img {
+  max-height:32px;
+  float: left;
+}
+
+.png-export-preview .light-picker-background {
+  max-width:240px;
+}
+
+.gif-upload-status {
+  width: 180px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.gif-upload,
+.png-export-preview {
+  overflow: hidden;
+}
+
+.gif-upload-status,
+.gif-export-preview {
+  float : left;
+}
+
+.gif-export-warning {
+  display: none;
+}
+
+.gif-export-warning.visible {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.gif-export-warning-icon {
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.gif-export-warning-message {
+  font-weight: normal;
+}
+
+.preview-upload-ongoing:before{
+  content: "Upload in progress...";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 45%;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
+.export-scale {
+  margin-bottom: 10px;
+}
+
+.export-scale .scale-input {
+  margin: 5px;
+  vertical-align: middle;
+  width: 150px;
+}
+
+.export-scale .scale-text {
+  height: 31px;
+  display: inline-block;
+  line-height: 30px;
+  width: 40px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.export-resize {
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.export-resize > * {
+  float: left;
+}
+
+.export-resize > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+.export-resize > .resize-field {
+  width: 70px;
+}
+
+.export-resize > .resize-label {
+  height: 23px;
+  line-height: 23px;
+}
+
+.export-panel-header {
+  padding: 10px 5px 0px;
+}
+
+.export-info {
+  font-style: italic;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+.export-panel-section {
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #5d5d5d;
+  border-radius: 2px;
+}
+
+.export-panel-row {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.export-panel-gif .button,
+.export-panel-png .button {
+  margin-right: 5px;
+  width: 75px;
+  flex-shrink: 0;
+}
+
+.export-panel-png .textfield {
+  width: 50px;
+}
+
+#png-export-columns,
+#png-export-rows {
+  /* Override default textfield padding-right to keep the number spinners
+     aligned to the right. */
+  padding-right: 0;
+}

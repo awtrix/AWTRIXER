@@ -1,0 +1,64 @@
+<div style="display:none">
+  <script type="text/template" id="popup-preview-partial">
+    <style>
+      body,
+      .popup-container ,
+      .preview-container,
+      .background-image-frame-container {
+        width : 100%;
+        height : 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .popup-container {
+        position: absolute;
+        background : #333;
+      }
+
+      .preview-container {
+        position: relative;
+      }
+
+      .background-image-frame-container {
+        position: relative;
+        background-repeat : no-repeat;
+      }
+
+      .canvas-container .canvas-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .light-picker-background,
+      .light-canvas-background .canvas-background {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEXf39////8zI3BgAAAAHklEQVR4AWNghAIGCMDgjwgFCDDSw2M0PSCD0fQAACRcAgF4ciGUAAAAAElFTkSuQmCC') repeat;
+      }
+
+      .medium-picker-background,
+      .medium-canvas-background .canvas-background {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEW6urr///82MBGFAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+      }
+
+      .lowcont-medium-picker-background,
+      .lowcont-medium-canvas-background .canvas-background {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEXV1dXb29tFGkCIAAAAHklEQVR4AWNghAIGCMDgjwgFCDDSw2M0PSCD0fQAACRcAgF4ciGUAAAAAElFTkSuQmCC ') repeat;
+      }
+
+      .lowcont-dark-picker-background,
+      .lowcont-dark-canvas-background .canvas-background {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+      }
+    </style>
+    <div class="popup-container  lowcont-dark-canvas-background ">
+      <div class="preview-container  canvas-container">
+        <div class="canvas-background"></div>
+      </div>
+    </div>
+  </script>
+</div>

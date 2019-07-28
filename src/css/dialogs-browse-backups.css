@@ -1,0 +1,152 @@
+#dialog-container.browse-backups {
+  width: 700px;
+  height: 500px;
+  top : 50%;
+  left : 50%;
+  position : absolute;
+  margin-left: -350px;
+}
+
+.backups-step-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.backups-step-content {
+  width: 100%;
+  height: 10px;
+  flex-grow: 1;
+  background: #444;
+
+  padding: 20px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.backups-step-actions {
+  flex-grow: 0;
+  flex-shrink: 1;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.show #dialog-container.browse-backups {
+  margin-top: -250px;
+}
+
+.browse-backups .browse-backups-disclaimer {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.browse-backups .browse-backups-disclaimer-content {
+  padding: 0 20px;
+  font-size: 13px;
+}
+
+.browse-backups .browse-backups-disclaimer .backups-icon {
+  border: 1px solid gold;
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+}
+
+.browse-backups .centered-message {
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  margin-top: 100px;
+  margin-left: -130px;
+  padding: 30px;
+
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid;
+}
+
+.browse-backups .session-list-empty,
+.browse-backups .snapshot-list-empty {
+  color: #bbb;
+}
+
+.browse-backups .session-list-error,
+.browse-backups .snapshot-list-error {
+  color: white;
+}
+
+.browse-backups .session-item {
+  /* Transition duration should be kept in sync with SelectSession.DELETE_TRANSITION_DURATION */
+  transition: all 500ms;
+}
+
+/* Hide and slide up next sessions when deleting an item */
+.browse-backups .session-item.deleting {
+  opacity: 0;
+  margin-bottom: -60px;
+}
+
+.browse-backups .session-item,
+.browse-backups .snapshot-item {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+
+  margin-bottom: 10px;
+  padding: 0 20px;
+
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+
+.browse-backups .snapshot-preview {
+  flex-grow: 0;
+  flex-shrink: 1;
+  /* Keep synced with SessionDetails.PREVIEW_SIZE */
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.browse-backups .session-details,
+.browse-backups .snapshot-details {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.browse-backups .session-details-title,
+.browse-backups .snapshot-details-title {
+  font-size: 13px;
+}
+
+.browse-backups .session-details-info,
+.browse-backups .snapshot-details-info {
+  font-size: 11px;
+  color: #bbb;
+  line-height: 1.5em;
+}
+
+.browse-backups .session-actions,
+.browse-backups .snapshot-actions {
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: flex;
+}
+
+.browse-backups .session-actions button,
+.browse-backups .snapshot-actions button {
+  margin-left: 10px;
+}
+
+.browse-backups .session-item:last-child,
+.browse-backups .snapshot-item:last-child {
+  margin-bottom: 0;
+}
