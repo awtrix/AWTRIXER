@@ -88,7 +88,7 @@
       this.renderer.render(frame);
       this.renderFlag = false;
       this.lastRenderTime = Date.now();
-
+      this.sendLive(index);
       this.popupPreviewController.render(frame);
     }
   };
@@ -107,6 +107,33 @@
       }
       return frameIndexes[index];
     }
+  };
+
+  ns.PreviewController.prototype.sendLive = function (frameNr) {
+    var width = this.piskelController.getWidth();
+    var height = this.piskelController.getHeight();
+
+    var icon = [];
+    var render = this.piskelController.renderFrameAt(frameNr, true);
+    var context = render.getContext('2d');
+    var imgd = context.getImageData(0, 0, width, height);
+    var pix = imgd.data;
+    var frame = [];
+
+    for (var j = 0; j < pix.length; j += 4) {
+      frame.push(this.rgbTo565(pix[j], pix[j + 1], pix[j + 2]));
+    }
+    icon.push(frame);
+
+    awtrix_raiseEvent("live_view", {"data": icon, "width": width, "height": height });
+  };
+
+  ns.PreviewController.prototype.rgbTo565 = function (r, g, b) {
+    var B = (b >> 3) & 0x1f;
+    var G = ((g >> 2) & 0x3f) << 5;
+    var R = ((r >> 3) & 0x1f) << 11;
+    var rgb = (R | G | B);
+    return rgb;
   };
 
   /**

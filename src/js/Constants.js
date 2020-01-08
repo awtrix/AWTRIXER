@@ -3,7 +3,7 @@ var Constants = {
   DEFAULT : {
     HEIGHT : 8,
     WIDTH : 8,
-    FPS : 12,
+    FPS : 8,
     LAYER_OPACITY : 0.2
   },
 
@@ -22,7 +22,7 @@ var Constants = {
   // Keep in sync with padding-left: 10px in layout.css
   RIGHT_COLUMN_PADDING_LEFT : 10,
 
-  DEFAULT_PEN_COLOR : '#000000',
+  DEFAULT_PEN_COLOR : '#ffffff',
   TRANSPARENT_COLOR : 'rgba(0, 0, 0, 0)',
   SEAMLESS_MODE_OVERLAY_COLOR : 'rgba(255, 255, 255, 0)',
 

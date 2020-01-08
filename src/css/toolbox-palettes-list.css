@@ -4,6 +4,12 @@
   flex-direction: column;
 }
 
+.liveview-container {
+
+  display: flex;
+  flex-direction: column;
+}
+
 .palettes-title {
   flex-shrink: 0;
   background-size: 22px;
@@ -21,6 +27,12 @@
   padding: 0;
 }
 
+.liveview-container .toolbox-buttons {
+  background-color: #3f3f3f;
+  height: 24px;
+  padding: 0;
+}
+
 .palettes-list-button,
 .palettes-list-select {
   margin: 0;
@@ -30,6 +42,11 @@
 .palettes-list-button {
   width: 16.66667%;
 }
+
+.liveview-list-button {
+  width: 48.8%;
+}
+
 
 .palettes-list-select {
   width: 66.66667%;

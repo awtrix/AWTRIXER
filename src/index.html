@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>AWTRIXER</title>
   <meta name="description" content="">
-  <meta name="author" content="Julian Descottes">
+  <meta name="author" content="Julian Descottes, Stephan Mühl">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../../js/awtrix_ws.js"></script>
 </head>
@@ -21,7 +21,7 @@
     z-index : 20000;
     transition:opacity 0.5s;
     color:white;">
-      <span style="top:45%">Loading Piskel ...</span>
+      <span style="top:45%">Loading AWTRIXER ...</span>
   </div>
   @@include('templates/debug-header.html', {})
 
@@ -44,6 +44,7 @@
 
       <div class="column right-column">
         @@include('templates/preview.html', {})
+        @@include('templates/liveview.html', {})
         @@include('templates/layers-list.html', {})
         @@include('templates/transformations.html', {})
         @@include('templates/palettes-list.html', {})
@@ -91,6 +92,7 @@
   @@include('templates/settings/preferences/misc.html', {})
   @@include('templates/settings/preferences/tile.html', {})
   @@include('templates/settings/resize.html', {})
+  @@include('templates/settings/live.html', {})
   @@include('templates/settings/save.html', {})
   @@include('templates/settings/import.html', {})
   @@include('templates/settings/export.html', {})

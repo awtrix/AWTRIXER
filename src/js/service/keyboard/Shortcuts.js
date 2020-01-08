@@ -71,7 +71,7 @@
 
     STORAGE : {
       SAVE : createShortcut('save', 'Save the current sprite', 'ctrl+S'),
-      OPEN : createShortcut('open', '(desktop) Open a .piskel file', 'ctrl+O'),
+      OPEN : createShortcut('open', '(desktop) Open a .awtrixer file', 'ctrl+O'),
       SAVE_AS : createShortcut('save-as', '(desktop) Save as new', 'ctrl+shift+S')
     },
 
