@@ -62,10 +62,13 @@
 
   ns.ResizeController.prototype.onResizeFormSubmit_ = function (evt) {
     evt.preventDefault();
-    if (this.widthInput.value > 32) {
+    if (this.widthInput.value > 8)  {
       this.widthInput.value = 32;
     };
-    if (this.heightInput.value > 8) {
+    if (this.widthInput.value < 8)  {
+      this.widthInput.value = 8;
+    };
+    if (this.heightInput.value != 8) {
       this.heightInput.value = 8;
     };
     var currentPiskel = this.piskelController.getPiskel();

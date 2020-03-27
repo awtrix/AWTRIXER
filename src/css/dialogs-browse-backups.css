@@ -50,7 +50,7 @@
 }
 
 .browse-backups .browse-backups-disclaimer .backups-icon {
-  border: 1px solid gold;
+  border: 1px solid #607D8B;
   flex-shrink: 0;
   width: 90px;
   height: 90px;

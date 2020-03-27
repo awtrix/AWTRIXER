@@ -5,7 +5,7 @@
 }
 
 .liveview-container {
-
+  min-height: 54px;
   display: flex;
   flex-direction: column;
 }

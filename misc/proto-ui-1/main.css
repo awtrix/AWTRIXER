@@ -56,7 +56,7 @@ body {
 	cursor: default;
 	background-color: #444;
 	cursor: normal;
-	border: 1px gold solid;
+	border: 1px #607D8B solid;
 	margin: 0;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .tool.has-group:hover:after {
-	border-color: gold;
+	border-color: #607D8B;
 	border-top-color: transparent;
 	border-left-color: transparent;
 }
@@ -159,7 +159,7 @@ body {
 }
 
 .preview-item.selected {
-	border-color: gold;
+	border-color: #607D8B;
 }
 
 .preview-item-overlay {
@@ -318,7 +318,7 @@ body {
 	top: -15px;
 	border: transparent 4px solid;
 	left: 38px;
-	border-bottom-color: gold;
+	border-bottom-color: #607D8B;
 	border-width: 6px;
 	border-style: solid;
 }

@@ -198,7 +198,7 @@ module.exports = function(grunt) {
         options: {
           patterns: [{
             match: /var\(--highlight-color\)/g,
-            replacement: "gold",
+            replacement: "#607D8B",
           }]
         },
         files: [{
